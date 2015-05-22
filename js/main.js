@@ -1,20 +1,11 @@
-var magnaCarta;
-var imagelist =[];
-function fetchDocument (){
-	$.getJSON(
-		"http://interactive.guim.co.uk/spreadsheetdata/1-bDOsAsRGhhJr-XWitDdVQLygka-ckjodRqIEDAX4QU.json",
-		useDocument
-	);}
+$('.factbox').click(function(e) {
+	e.preventDefault;
+	console.log('trigger')
+	var lightbox = 
+	'<div id="lightbox">' +	'</div>';
+		
+	$(this).append(lightbox);
 
-function useDocument (data) {
-	magnaCarta = data.sheets.Sheet1;
-	chainImages();}
+	console.log('triggered');
+	$('#lightbox').load('data/Clause_04 .latin_text');});
 
-function chainImages() {
-	$.each(magnaCarta, function(){		
-		imagelist += '<img src="img/' + this.image + '" title="' + this.english + '">';
-		document.getElementById("playground").innerHTML = imagelist;		
-	});}
-
-
-fetchDocument();
