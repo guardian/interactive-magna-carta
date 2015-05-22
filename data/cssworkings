@@ -1,0 +1,39 @@
+}
+
+		#map li:hover{
+			display: block;
+}
+
+
+		#map #one {
+			position:absolute;			
+			width:200px;
+			left:205px;
+			top:173px;
+		}
+
+		#map #one #onetext{
+			z-index:20;
+			display:block;
+			padding:5px;
+			border:1px solid #000;
+			background:#fff;
+			text-decoration:none;
+			color:#000;
+			opacity:0.8;
+		}
+
+		#map #two {
+			position:absolute;
+			display:block;
+			width:200px;
+			left:305px;
+			top:173px;
+			z-index:20;
+			padding:5px;
+			border:1px solid #000;
+			background:#fff;
+			text-decoration:none;
+			color:#000;
+			opacity:0.8;
+		}
